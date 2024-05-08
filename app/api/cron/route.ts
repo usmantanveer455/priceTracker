@@ -60,7 +60,8 @@ export async function GET(request: Request) {
             title: updatedProduct.title,
             url: updatedProduct.url,
             currentPrice: updatedProduct.currentPrice,
-            image: updatedProduct.image
+            image: updatedProduct.image,
+            users: updatedProduct.users
           };
           // Construct emailContent
           const emailContent = await generateEmailBody(productInfo, emailNotifType);
